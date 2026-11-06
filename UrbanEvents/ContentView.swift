@@ -4,7 +4,7 @@ struct ContentView: View {
     // Istanziamo il ViewModel mantenendolo in memoria
     @StateObject private var viewModel = EventsViewModel()
 
-    enum Tab: Hashable { case explore, map, create }
+    enum Tab: Hashable { case explore, map, create, favorites }
     @State private var selectedTab: Tab = .explore
 
     var body: some View {
@@ -20,6 +20,11 @@ struct ContentView: View {
             AddEventView(viewModel: viewModel, onShowOnMap: { selectedTab = .map })
                 .tabItem { Label("Crea", systemImage: "plus.circle") }
                 .tag(Tab.create)
+
+            FavoritesView(viewModel: viewModel)
+                .tabItem { Label("Preferiti", systemImage: "heart") }
+                .tag(Tab.favorites)
+                .badge(viewModel.favoriteIDs.count)
         }
         // Rende il ViewModel disponibile anche alle schermate di dettaglio (cuore, acquisto)
         .environmentObject(viewModel)
