@@ -1,14 +1,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Istanziamo il ViewModel mantenendolo in memoria
+    @StateObject private var viewModel = EventsViewModel()
+
     var body: some View {
-        VStack(spacing: 12) {
-            Image(systemName: "building.2.crop.circle")
-                .font(.system(size: 60))
-                .foregroundStyle(.blue)
-            Text(verbatim: "UrbanEvents")
-                .font(.largeTitle.bold())
+        TabView {
+            ExploreView(viewModel: viewModel)
+                .tabItem { Label("Esplora", systemImage: "safari") }
         }
+        // Rende il ViewModel disponibile anche alle schermate di dettaglio (cuore, acquisto)
+        .environmentObject(viewModel)
     }
 }
 
