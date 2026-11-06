@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Xcode – dati personali dell'utente (non vanno condivisi)
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# File locali da NON caricare
+UrbanEvents 2.xcodeproj/
+UrbanEvents.xcodeproj.zip
+GUIDA_COMMIT.md
+COMMIT_KIT/
+COMMIT_KIT.zip
