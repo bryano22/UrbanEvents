@@ -1,0 +1,28 @@
+[
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174000",
+    "title": "Mostra d'Arte Contemporanea",
+    "description": "Un'esposizione delle migliori opere di artisti emergenti locali.",
+    "category": "Arte",
+    "address": "Palazzo Reale, Piazza del Duomo 12",
+    "date": "15 Nov 2026 - 18:00",
+    "price": 10.0,
+    "isFree": false,
+    "imageURL": "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=800",
+    "latitude": 45.4642,
+    "longitude": 9.1900
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174001",
+    "title": "Concerto Jazz in Piazza",
+    "description": "Serata di musica jazz dal vivo all'aperto. Ingresso libero.",
+    "category": "Musica",
+    "address": "Piazza Mercanti, Milano",
+    "date": "20 Nov 2026 - 21:00",
+    "price": 0.0,
+    "isFree": true,
+    "imageURL": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=800",
+    "latitude": 45.4700,
+    "longitude": 9.1800
+  }
+]
