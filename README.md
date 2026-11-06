@@ -27,3 +27,5 @@ UrbanEvents/
 ├── Views/         → schermate SwiftUI
 └── Resources/     → traduzioni e dati di esempio
 ```
+
+La spiegazione completa è in `DOCUMENTAZIONE.md`.
